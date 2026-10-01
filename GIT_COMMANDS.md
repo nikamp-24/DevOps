@@ -37,3 +37,52 @@
 ### 8. Push to GitHub
 
 - `git push origin main` - Pushes the local commits from the `main` branch to the remote GitHub repository.
+
+
+## Day 2 — Remote Repository & Git Pull
+
+### 1. Git Local Configuration
+
+- `git config user.name "Your Name"` - Sets the Git username locally for the current repository.
+
+- `git config user.email "your@email.com"` - Sets the Git email locally for the current repository.
+
+- `git config --list` - Displays the Git configuration settings for the current repository.
+
+- `git config --local --list` - Displays only the local configuration settings of the current repository.
+
+### 2. Connect Local Repository to GitHub
+
+- `git remote add origin <repository-url>` - Connects the local Git repository to a remote GitHub repository.
+
+### 3. Git Remote
+
+- `git remote -v` - Displays the URLs of the remote repositories for fetching and pushing.
+
+- `git remote` - Displays the names of the configured remote repositories.
+
+### 4. Meaning of Origin
+
+- `origin` - The default name commonly given to the remote GitHub repository when a remote repository is added.
+
+- `git remote add origin <repository-url>` - Adds the GitHub repository as a remote named `origin`.
+
+### 5. Git Pull
+
+- `git pull` - Fetches the latest changes from the remote repository and merges them into the current local branch.
+
+- `git pull origin main` - Fetches and merges the latest changes from the `main` branch of the remote repository named `origin`.
+
+### 6. Git Fetch
+
+- `git fetch` - Downloads the latest changes from the remote repository without merging them into the current branch.
+
+- `git fetch origin` - Fetches the latest changes from the remote repository named `origin`.
+
+### 7. Verbose Output
+
+- `git pull -v` - Performs a pull operation and displays detailed information about the operation.
+
+- `git fetch -v` - Fetches changes and displays detailed information about the operation.
+
+- `git remote -v` - Displays the remote repository URLs for fetch and push operations.
