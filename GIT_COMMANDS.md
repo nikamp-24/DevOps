@@ -86,3 +86,55 @@
 - `git fetch -v` - Fetches changes and displays detailed information about the operation.
 
 - `git remote -v` - Displays the remote repository URLs for fetch and push operations.
+
+## Day 3 — Git Branching
+
+### 1. List Branches
+
+- `git branch` - Lists the local branches in the repository.
+
+- `git branch --list` - Lists all local branches.
+
+### 2. Create a Branch
+
+- `git branch <branch-name>` - Creates a new branch with the specified name.
+
+### 3. Switch Branch
+
+- `git switch <branch-name>` - Switches to the specified branch.
+
+- `git checkout <branch-name>` - Switches to the specified branch.
+
+### 4. Create and Switch to a New Branch
+
+- `git checkout -b <branch-name>` - Creates a new branch and switches to it immediately.
+
+### 5. Push a Branch to Remote
+
+- `git push <alias-name> <branch-name>` - Pushes the specified local branch to the remote repository.
+
+### 6. List Remote Branches
+
+- `git branch -r` - Lists the branches available on the remote repository.
+
+### 7. List Local and Remote Branches
+
+- `git branch -a` - Lists all local and remote branches.
+
+### 8. Rename Current Branch
+
+- `git branch -m <new-branch-name>` - Renames the current branch.
+
+### 9. Rename a Specific Branch
+
+- `git branch -m <old-branch-name> <new-branch-name>` - Renames the specified branch.
+
+### 10. Delete Remote Branch
+
+- `git push origin -d <branch-name>` - Deletes the specified branch from the remote repository.
+
+### 11. Delete Local Branch
+
+- `git branch -d <branch-name>` - Deletes a local branch that has already been merged.
+
+- `git branch -D <branch-name>` - Forcefully deletes a local branch, even if it has not been merged.
