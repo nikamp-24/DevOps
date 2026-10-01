@@ -133,8 +133,16 @@
 
 - `git push origin -d <branch-name>` - Deletes the specified branch from the remote repository.
 
-### 11. Delete Local Branch
+## Day 3 — Git push
+
+### 1. Delete Local Branch
 
 - `git branch -d <branch-name>` - Deletes a local branch that has already been merged.
 
 - `git branch -D <branch-name>` - Forcefully deletes a local branch, even if it has not been merged.
+
+### 2. Force Push
+
+- `git push -f origin <branch-name>` - Forcefully pushes local changes to the specified remote branch.
+
+- `git push --force-with-lease origin <branch-name>` - Force pushes changes while checking that the remote branch has not changed unexpectedly.
