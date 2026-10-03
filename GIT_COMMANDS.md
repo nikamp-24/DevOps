@@ -146,3 +146,112 @@
 - `git push -f origin <branch-name>` - Forcefully pushes local changes to the specified remote branch.
 
 - `git push --force-with-lease origin <branch-name>` - Force pushes changes while checking that the remote branch has not changed unexpectedly.
+
+
+## Day 4 — File and Text Commands
+
+### 1. cat
+
+- `cat filename` - Displays the contents of a file.
+
+- `cat < filename` - Displays the contents of a file using input redirection.
+
+### 2. echo
+
+- `echo "text"` - Displays the specified text on the terminal.
+
+- `echo "text" > filename` - Writes the specified text into a file. If the file already contains data, the existing content is replaced.
+
+- `echo "text" >> filename` - Appends the specified text to the end of a file without replacing the existing content.
+
+### 3. nano
+
+- `nano filename` - Opens a file in the Nano text editor for creating or editing the file.
+
+#### Basic Nano Steps
+
+1. Open the file:
+   `nano filename`
+
+2. Start typing directly - Nano opens in editing mode, so you can immediately insert or modify text.
+
+3. Save the file:
+   `Ctrl + S`
+
+4. Exit Nano:
+   `Ctrl + X`
+
+5. If Nano asks whether to save changes:
+   - Press `Y` - Save changes.
+   - Press `N` - Exit without saving.
+   - Press `Enter` - Confirm the filename.
+
+### 4. vi
+
+- `vi filename` - Opens a file in the Vi text editor for creating or editing the file.
+
+#### Basic Vi Steps
+
+1. Open the file:
+   `vi filename`
+
+2. Enter Insert Mode:
+   - Press `i` - Starts inserting text at the cursor position.
+
+3. Type or edit your content.
+
+4. Exit Insert Mode:
+   - Press `Esc`
+
+5. Save the file:
+   - Type `:w`
+   - Press `Enter`
+
+6. Save and Exit:
+   - Press `Esc`
+   - Type `:wq`
+   - Press `Enter`
+
+7. Exit without saving:
+   - Press `Esc`
+   - Type `:q!`
+   - Press `Enter`
+
+### 5. vim
+
+- `vim filename` - Opens a file in the Vim text editor for creating or editing the file.
+
+#### Basic Vim Steps
+
+1. Open the file:
+   `vim filename`
+
+2. Enter Insert Mode:
+   - Press `i` - Starts inserting text.
+
+3. Type or edit your content.
+
+4. Exit Insert Mode:
+   - Press `Esc`
+
+5. Save the file:
+   - Type `:w`
+   - Press `Enter`
+
+6. Save and Exit:
+   - Press `Esc`
+   - Type `:wq`
+   - Press `Enter`
+
+7. Exit without saving:
+   - Press `Esc`
+   - Type `:q!`
+   - Press `Enter`
+
+### Quick Reference
+
+| Editor | Open | Insert/Edit | Save | Save & Exit | Exit Without Saving |
+|---|---|---|---|---|---|
+| Nano | `nano filename` | Type directly | `Ctrl + S` | `Ctrl + S`, `Ctrl + X` | `Ctrl + X`, then `N` |
+| Vi | `vi filename` | `i` | `Esc` → `:w` → Enter | `Esc` → `:wq` → Enter | `Esc` → `:q!` → Enter |
+| Vim | `vim filename` | `i` | `Esc` → `:w` → Enter | `Esc` → `:wq` → Enter | `Esc` → `:q!` → Enter |
